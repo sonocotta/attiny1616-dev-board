@@ -101,7 +101,7 @@ Next run `Upload: tiny1616-jtag2updi` task if you're using jtag2updi programmer,
 
 As [explained](https://github.com/SpenceKonde/megaTinyCore) in many details by Spence, 1-Series chips cannot provide Arduino-like one-click-upload with Optiboot behavior without some sacrifice. Reason for that is pin collision: UPDI and RESET are the same pin, so you need to decide which you'd prefer. If you use auto-reset, you lose UPDI, specifically possibility to change fuses easily (this is important in my opinion). If you use UPDI you need 2 connections to your MCU - one via programming interface, another one for Serial communication. 
 
-Personnaly I prefer to keep UPDI and use direct programming without custom bootloader, having extra wire is minor inconvinience for me, but losing fuses permanently is not an option.
+Personally I prefer to keep UPDI and use direct programming without custom bootloader, having extra wire is minor inconvenience for me, but losing fuses permanently is not an option.
 
 ## Where to buy
 
