@@ -5,6 +5,8 @@
 
 ATtiny 1616 Development Board is a small and handy development board built around new generation of ATiny series. It is pin and size compartible with Arduino Nano board and can be used as it's direct replacement (with certain limitations). It can be programmed using both Arduino IDE and Platformio IDE, as well as vanilla console tools.
 
+![image](https://user-images.githubusercontent.com/5459747/206928962-67fdb6a5-8794-4674-a813-c9d632d3219f.png)
+
 ## Motivation
 
 I'm a big fan of early ATtiny series chips, I even made my own [ATtiny Flasher](https://sonocotta.com/attiny-flasher/) tool for productive development and few educational kites based on ubiquitous ATtiny85. Time has come to extend my horizons and look into modern line of ATtiny chips, specifically so called 1-series and 2-series line of MCUs. 
@@ -58,21 +60,48 @@ Spence Konde created another great [writeup](https://github.com/SpenceKonde/AVR-
 
 Method (c) is disqualified on 1-Series chip because of RESET/UPDI pin collision, and both (a) and (b) work equally well. Difference being what is easier for you: (a) dedicate Arduino Nano board for programming or (b) do solder job on your usb-serial adapter.
 
+![image](https://user-images.githubusercontent.com/5459747/206929018-e960566d-2edd-4ede-aa5d-861d47c59a57.png)
+
 ### Arduino IDE
 
- ...
+Use Arduino 1.8.x, Core doesn't work with 2.X versions of Arduino at the moment of writing.
+
+Add [http://drazzy.com/package_drazzy.com_index.json](http://drazzy.com/package_drazzy.com_index.json) to board manager
+
+![image](https://user-images.githubusercontent.com/5459747/206929150-8aabfb95-e73e-4a6f-94f1-1c10b98fd951.png)
+
+After that you should install megaTinyCore from Board Manager
+
+![image](https://user-images.githubusercontent.com/5459747/206929195-dfa65615-acd0-49ba-a572-25e89ce978aa.png)
+
+Select ATtiny1616 as target and other necessary settings in the board settings after
+
+![image](https://user-images.githubusercontent.com/5459747/206929344-34b50378-c1a1-4dbe-bcd1-e812720bf86d.png)
 
 ### Platformio IDE
  
- ...
+After installing [Plarformio IDE](https://platformio.org/platformio-ide), open [sample project](/firmware/t1616-starter). Run `Build` command to install necessary tools and libraries. 
+
+Next run `Upload: tiny1616-jtag2updi` task if you're using jtag2updi programmer, or `Upload: tiny1616-serialupdi` task if using modified Serial adapter method. In both cases you can use `Upload and Monitor` task.
 
 ## Hardware
 
- ...
+![image](https://user-images.githubusercontent.com/5459747/206929920-294f9ec9-dbf8-4ae4-8b39-6af7685821ab.png)
 
-## Firmware
 
- ...
+- ![image](https://user-images.githubusercontent.com/5459747/206929567-5a68f822-1172-459c-bb34-64ab1ee2019c.png) ATTINY1616 MCU 
+- ![image](https://user-images.githubusercontent.com/5459747/206929597-8f1b7a41-9ef4-4301-9d88-fdd6952fe900.png) CH340E USB-Serial Adapter connected to Hardware Serial
+- ![image](https://user-images.githubusercontent.com/5459747/206929650-72bfa8ba-716a-4830-ae14-a2c6ddff8830.png) WS2812B RGB LED
+- ![image](https://user-images.githubusercontent.com/5459747/206929704-bb9a66ee-7e48-4c81-87f7-1f0c60d1a02f.png) UPDI Programming and Debug header
+- ![image](https://user-images.githubusercontent.com/5459747/206929744-5f7abffb-341e-49c9-8988-01835a2045a8.png) Hardware Push button
+- ![image](https://user-images.githubusercontent.com/5459747/206929801-e55e502e-bdce-4d85-a376-3268b96dc5e2.png) VIN disconnect - cut this line to disconnect LDO chip and power-on LED, recommended for low-power applications
+- ![image](https://user-images.githubusercontent.com/5459747/206929866-0ef4aaad-d004-42b9-9b17-7bfbe8238634.png) RES disconnect - short this line to enable auto-RESET functionality with Optiboot bootloader (read below)
+
+### Auto reset with Optiboot
+
+As [explained](https://github.com/SpenceKonde/megaTinyCore) in many details by Spence, 1-Series chips cannot provide Arduino-like one-click-upload with Optiboot behavior without some sacrifice. Reason for that is pin collision: UPDI and RESET are the same pin, so you need to decide which you'd prefer. If you use auto-reset, you lose UPDI, specifically possibility to change fuses easily (this is important in my opinion). If you use UPDI you need 2 connections to your MCU - one via programming interface, another one for Serial communication. 
+
+Personnaly I prefer to keep UPDI and use direct programming without custom bootloader, having extra wire is minor inconvinience for me, but losing fuses permanently is not an option.
 
 ## Where to buy
 
