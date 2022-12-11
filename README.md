@@ -3,13 +3,13 @@
 ![Open Source Hardware](/doc/images/open-source-hardware-logo.png)
 ![Open Source Software](/doc/images/open-source-software-logo.png)
 
-ATtiny 1616 Development Board is a small and handy development board built around new generation of ATiny series. It is pin and size compartible with Arduino Nano board and can be used as it's direct replacement (with certain limitations). It can be programmed using both Arduino IDE and Platformio IDE, as well as vanilla console tools.
+ATtiny 1616 Development Board is a small and handy development board built around new generation of ATiny series. It is pin and size compatible with Arduino Nano board and can be used as it's direct replacement (with certain limitations). It can be programmed using both Arduino IDE and Platformio IDE, as well as vanilla console tools.
 
 ![image](https://user-images.githubusercontent.com/5459747/206928962-67fdb6a5-8794-4674-a813-c9d632d3219f.png)
 
 ## Motivation
 
-I'm a big fan of early ATtiny series chips, I even made my own [ATtiny Flasher](https://sonocotta.com/attiny-flasher/) tool for productive development and few educational kites based on ubiquitous ATtiny85. Time has come to extend my horizons and look into modern line of ATtiny chips, specifically so called 1-series and 2-series line of MCUs. 
+I'm a big fan of early ATtiny series chips, I even made my own [ATtiny Flasher](https://sonocotta.com/attiny-flasher/) tool for productive development and few educational kits based on ubiquitous ATtiny85. Time has come to extend my horizons and look into modern line of ATtiny chips, specifically so called 1-series and 2-series line of MCUs. 
 
 No need to mention that they went far ahead old series, and having resources comparable with old ATmega series. This gave me an idea to make Arduino Nano pin compatible development board, so I can start using it the projects, where I'd normally pick Arduino Nano. In my practice the best way to get familiar with new hardware is to start using it in the actual projects.
 
