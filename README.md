@@ -105,7 +105,7 @@ Personally I prefer to keep UPDI and use direct programming without custom bootl
 
 ## Where to buy
 
-In limited quantities possible to buy at [Tindie](https://www.tindie.com/products/sonocotta).
+In limited quantities possible to buy at [Tindie](https://www.tindie.com/products/sonocotta/attiny1616-development-board/).
 
 ## Links
 
