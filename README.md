@@ -9,7 +9,7 @@ ATtiny 1616 Development Board is a small and handy development board built aroun
 
 ## Motivation
 
-I'm a big fan of early ATtiny series chips, I even made my own [ATtiny Flasher](https://sonocotta.com/attiny-flasher/) tool for productive development and few educational kits based on ubiquitous ATtiny85. Time has come to extend my horizons and look into modern line of ATtiny chips, specifically so called 1-series and 2-series line of MCUs. 
+I'm a big fan of early ATtiny series chips, I even made my own [ATtiny Flasher](https://sonocotta.com/attiny-flasher/) tool for productive development and few educational kits based on ubiquitous ATtiny85. Time has come to extend my horizons and look into the modern line of ATtiny chips, specifically so called 1-series and 2-series line of MCUs. 
 
 No need to mention that they went far ahead old series, and having resources comparable with old ATmega series. This gave me an idea to make Arduino Nano pin compatible development board, so I can start using it the projects, where I'd normally pick Arduino Nano. In my practice the best way to get familiar with new hardware is to start using it in the actual projects.
 
