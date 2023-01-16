@@ -50,6 +50,8 @@ ATiny1616 is a mid-range chip in new [ATtiny 1-Series line](https://en.wikipedia
 
 ![image](https://user-images.githubusercontent.com/5459747/212763915-7140cad8-92b5-4af6-a9e5-c40de1467dbf.png)
 
+Note: Revision A and B has backside pin lables rotated, big 🤦 for me. It will be fixed in the next revisions.
+
 ## MCU Pinout
 
 ![image](https://user-images.githubusercontent.com/5459747/212764127-5830f7e1-c171-413c-a362-3492247895f4.png)
