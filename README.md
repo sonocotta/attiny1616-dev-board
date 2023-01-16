@@ -46,6 +46,14 @@ ATiny1616 is a mid-range chip in new [ATtiny 1-Series line](https://en.wikipedia
 | PWM channels  | 2        | 4          | 6          | 6          |
 | ADC pins      | 8        | 12         | 8          | 8          |
 
+## Board Pinout
+
+![image](https://user-images.githubusercontent.com/5459747/212763915-7140cad8-92b5-4af6-a9e5-c40de1467dbf.png)
+
+## MCU Pinout
+
+![image](https://user-images.githubusercontent.com/5459747/212764127-5830f7e1-c171-413c-a362-3492247895f4.png)
+
 ## Arduino Core
 
 Spence Konde created and maintains [Arduino Core](https://github.com/SpenceKonde/megaTinyCore). This is a great place to start to get to know new chips better, and understand what is supported and what isn't. 
