@@ -70,7 +70,21 @@ Spence Konde created another great [writeup](https://github.com/SpenceKonde/AVR-
 
 Method (c) is disqualified on 1-Series chip because of RESET/UPDI pin collision, and both (a) and (b) work equally well. Difference being what is easier for you: (a) dedicate Arduino Nano board for programming or (b) do solder job on your usb-serial adapter.
 
-![image](https://user-images.githubusercontent.com/5459747/206929018-e960566d-2edd-4ede-aa5d-861d47c59a57.png)
+### Revision A (Discontinued)
+
+| Method | Connection |
+|----------|------------|
+|  jtag2updi         | ![image](https://user-images.githubusercontent.com/5459747/213477557-20c45e7f-9749-4db9-b5e8-835daf2b69b4.png)
+| SerialUPDI<br/>(recommended) | ![image](https://user-images.githubusercontent.com/5459747/213477231-9fa7431a-e2d6-4d7b-93d9-fbb924b21496.png)
+
+### Revision B (Current latest)
+
+Starting from revision B diode between TX and RX pins are included on the board, so you can use unmodified USB-Serial adapter.
+
+| Method | Connection |
+|----------|------------|
+|  jtag2updi         | ![image](https://user-images.githubusercontent.com/5459747/213477813-b20dfe72-d417-455c-b683-b1e41a4e2247.png)
+| SerialUPDI<br/>(recommended) | ![image](https://user-images.githubusercontent.com/5459747/213477716-04c15d4e-4179-488a-910e-8a37a4a4ce2f.png)
 
 ### Arduino IDE
 

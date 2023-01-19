@@ -1,0 +1,3 @@
+[submodule "firmware/jtag2updi"]
+	path = firmware/jtag2updi
+	url = https://github.com/anabolyc/jtag2updi
