@@ -108,6 +108,12 @@ After installing [Plarformio IDE](https://platformio.org/platformio-ide), open [
 
 Next run `Upload: tiny1616-jtag2updi` task if you're using jtag2updi programmer, or `Upload: tiny1616-serialupdi` task if using modified Serial adapter method. In both cases you can use `Upload and Monitor` task.
 
+### [Digital Safe firmware](https://github.com/sonocotta/attiny1616-dev-board/tree/main/firmware/t1616-password-entry)
+
+[Weekend project](https://hackaday.io/project/186193-attiny1616-development-board/log/216421-digital-safe-project-based-on-attiny1616) I did for my 6-year old son. Based on (Electronic Safe with Arduino)[https://projecthub.arduino.cc/chummer1010/62207bc9-3ce8-459e-a1bf-6789ae89eaa0] project, mostly rewritten in order to add support for async execution.
+
+![image](https://user-images.githubusercontent.com/5459747/222250919-6f6eff50-0577-4bc1-98f7-d4f109cd9de8.png)
+
 ## Hardware
 
 ![image](https://user-images.githubusercontent.com/5459747/206929920-294f9ec9-dbf8-4ae4-8b39-6af7685821ab.png)
