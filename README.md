@@ -86,6 +86,10 @@ Starting from revision B diode between TX and RX pins are included on the board,
 |  jtag2updi         | ![image](https://user-images.githubusercontent.com/5459747/213477813-b20dfe72-d417-455c-b683-b1e41a4e2247.png)
 | SerialUPDI<br/>(recommended) | ![image](https://user-images.githubusercontent.com/5459747/213477716-04c15d4e-4179-488a-910e-8a37a4a4ce2f.png)
 
+### Revision C (co-exists with rev B)
+
+Working on one of the projects, it came to me, hey, there is already USB-Serial adapter on the board, serving Serial communication. Why not to use it for flashing. So revision C came, **no external programmer needed**, plug-n-play. Drawback is that you lose Serial communication via built-in USB.
+
 ### Arduino IDE
 
 Use Arduino 1.8.x, Core doesn't work with 2.X versions of Arduino at the moment of writing.
