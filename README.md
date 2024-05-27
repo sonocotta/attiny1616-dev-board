@@ -2,6 +2,9 @@
 
 ![Open Source Hardware](/doc/images/open-source-hardware-logo.png)
 ![Open Source Software](/doc/images/open-source-software-logo.png)
+<a href="https://www.tindie.com/stores/sonocotta/?ref=offsite_badges&utm_source=sellers_andrey-malyshenko&utm_medium=badges&utm_campaign=badge_medium"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a>
+<br />
+[![Dev Chat](https://img.shields.io/discord/1233306441469657140?logo=discord&label=discord&style=flat-square)](https://discord.gg/PtnaAaQMpS)
 
 ATtiny 1616 Development Board is a small and handy development board built around the new generation of the ATiny series. It is pin and size compatible with Arduino Nano board and can be used as its direct replacement (with certain limitations). It can be programmed using both Arduino IDE and Platformio IDE, as well as vanilla console tools.
 
